@@ -28,7 +28,19 @@ ul{
 }
 .row{
     display: flex;
+    flex-direction: row;
     margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container{
+        margin-top: 10px;
+        flex: 100%;
+    }
 }
 .container{
     margin-top: 20px;
