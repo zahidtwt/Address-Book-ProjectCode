@@ -29,6 +29,20 @@
     <body>
         <h1 class="heading">ADDRESS BOOK</h1>
         <div class="row">
+            <div class="container">
+                <div class="address-form">
+                    <h2 class="title">Saved Contact</h2>
+                    <div class="search-info">
+                        <input
+                            type="text"
+                            name="search"
+                            id="search-info"
+                            placeholder="Type to search..." />
+                    </div>
+                    <ul id="infos"></ul>
+                </div>
+            </div>
+
             <div class="container address-form">
                 <h2 class="title">Add New Contact</h2>
                 <form id="contactForm">
@@ -46,20 +60,6 @@
 
                     <input type="submit" value="Add to Contact" />
                 </form>
-            </div>
-
-            <div class="container">
-                <div class="address-form">
-                    <h2 class="title">Saved Contact</h2>
-                    <div class="search-info">
-                        <input
-                            type="text"
-                            name="search"
-                            id="search-info"
-                            placeholder="Type to search..." />
-                    </div>
-                    <ul id="infos"></ul>
-                </div>
             </div>
         </div>
         <!--JQUERY FILE-->
