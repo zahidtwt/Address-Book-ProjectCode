@@ -1,0 +1,132 @@
+:root {
+    --main-color:#1abc9c;
+    --bg-color: #f3f4f6;
+    --white-color: #fff;
+    --alert-color: #FF0000;
+    --default-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);;
+    
+}
+
+* { 
+    box-sizing: border-box;
+    margin: 0; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    justify-content: center;
+    background-color: var(--bg-color);
+    line-height: 1.5em;
+    
+}
+h2{
+    padding: 10px 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0px
+}
+.row{
+    display: flex;
+    margin: 0;
+}
+.container{
+    margin-top: 20px;
+    flex: 50%;
+}
+
+.heading{
+    color: var(--white-color);
+    margin-top: 0;
+    padding: 10px;
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.title{
+    margin-bottom: 1em;
+    border-bottom: 5px solid var(--main-color);
+}
+/***
+address form css
+**/
+
+.address-form{
+    padding: 0 5em;
+}
+
+form label{
+    cursor: pointer;
+}
+form input {
+	margin:1em 0;
+	padding:15px 2em;
+	width:100%;
+	outline:none;
+	border: none;
+	border-radius:20px;
+	display:inline-block;
+    box-shadow: var(-default-shadow);
+}
+
+input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:var(--main-color);
+	border:none;
+	color:var(--white-color);
+	cursor:pointer;
+	display:inline-block;
+	clear:right;
+}
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+}
+
+/**** contact info style****/
+
+.contact-info {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 5px;
+    box-shadow: var(-default-shadow);
+    border-radius: 20px;
+    background-color: var(--white-color);
+}
+::placeholder{
+    font-weight: bold;
+    color: rgb(151, 151, 151);
+}
+.search-info{
+    width: 100%;
+}
+.search-info input{
+    margin:1em 0 1em 0;
+	padding:15px 2em;
+	border: none;
+	border-radius:20px;
+    width: inherit;
+    box-shadow: var(-default-shadow);
+}
+
+.delete{
+    text-align: right;
+    color: var(--alert-color);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete:hover{
+    text-align: right;
+    color: var(--alert-color);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
