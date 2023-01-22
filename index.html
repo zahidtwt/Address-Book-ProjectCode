@@ -47,15 +47,19 @@
                 <h2 class="title">Add New Contact</h2>
                 <form id="contactForm">
                     <label for="firstName"> First Name</label>
-                    <input type="text" name="firstName" id="firstName" />
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        required />
 
                     <label for="lastName"> Last Name</label>
                     <input type="text" name="lastName" id="lastName" />
 
                     <label for="phone"> Phone Number</label>
-                    <input type="tel" name="phone" id="phone" />
+                    <input type="tel" name="phone" id="phone" required />
 
-                    <label for="address"> Address</label>
+                    <label for="address"> Address </label>
                     <input type="text" name="address" id="address" />
 
                     <input type="submit" value="Add to Contact" />
